@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility control</title>
+    <script type="text/javascript">
+        function flipImag() {
+            dom = document.getElementById("saturn").style;
+            if (dom.visibility === "visible") {
+                dom.visibility = "hidden";
+            } else {
+                dom.visibility = "visible";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <div id="saturn" style="position: relative; visibility: visible;">
+            <img src="saturn.jpg" alt="(Pictures of Saturn)" />
+        </div>
+        <p>
+            <br />
+            <input type="button" value="Toggle Saturn" onclick="flipImag()" />
+        </p>
+    </form>
+</body>
+</html>
