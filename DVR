@@ -45,10 +45,11 @@
             if(rt[i].nextHop[j] != -1){
                 printf("%c\n",'A'+rt[i].nextHop[j]);
             }else{
+               printf("-\n");
     }
         }
             }
-                printf("-\n");
+                
     char src , dest;
     printf("Enter the source (A-%c):",'A'+n-1);
     scanf(" %c",&src);    
